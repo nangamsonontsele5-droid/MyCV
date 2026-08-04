@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap');
+/* GENERAL */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f8fafc;
+    color: #1f2937;
+    line-height: 1.7;
+}
+
+section{
+    padding: 80px 0;
+}
+
+h1,h2,h3,
+.navbar-brand{
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* NAVBAR */
+.navbar{
+    background-color: #ffffff !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-link{
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover{
+    color: #2e8b57;
+}
+
+/* HERO SECTION */
+#home{
+    background: linear-gradient(135deg, #f8fafc, #e8f5e9);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#home img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 6px solid #2e8b57;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+#home h1{
+    font-size: 3.5rem;
+    color:#1f2937;
+}
+
+#home h2{
+    color: #2e8b57;
+    margin-bottom: 20px;
+}
+
+#home p{
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* BUTTONS */
+.btn{
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-primary{
+    background-color: #2e8b57;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #256d46;
+    transform: translateY(-3px);
+}
+
+.btn-outline-dark:hover{
+    transform:translateY(-3px);
+}
+
+/* CARDS */
+.card{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    height:100%;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-title{
+    color:#2e8b57; 
+}
+
+@media (max-width: 768px){
+    #home h1{
+        font-size: 2.5rem;
+        
+    }
+}
+/* ABOUT SECTION */
+#about{
+    background-color: #ffffff;
+    
+}
+
+#about p{
+    max-width: 800px;
+    margin:auto;
+    text-align: center;
+}
+
+/* SKILLS SECTION */
+#skills{
+   background: #f8fafc 
+}
+
+#skills ul{
+    list-style:none;
+    padding:0;
+}
+
+#skills li{
+    display:inline-block;
+    background:#2e8b57;
+    color:white;
+    padding:10px 20px;
+    margin:8px;
+    border-radius:30px;
+}
+
+/* EDUCATION SECTION */
+#education{
+    
+}
+
+/* EXPERIENCE SECTION */
+#experience{
+    
+}
+
+/* PROJECTS SECTION */
+#projects{
+    background:#ffffff;
+}
+
+/* CONTACT SECTION */
+#contact{
+    background: #f8fafc;
+    text-align: center;
+}
+
+/* FOOTER */
+footer{
+    background: #1f2937;
+    color:white;
+    text-align:center;
+    padding: 25px;
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+.dark-mode {
+    background-color: #121212;
+    color: #F8FAFC;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode .navbar {
+    background-color: #1F2937 !important;
+}
+
+.dark-mode .navbar-brand,
+.dark-mode .nav-link {
+    color: #F8FAFC !important;
+}
+
+.dark-mode #home {
+    background: linear-gradient(135deg, #1F2937, #111827);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p {
+    color: #F8FAFC;
+}
+
+.dark-mode .card {
+    background-color: #1F2937;
+    color: #F8FAFC;
+}
